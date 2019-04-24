@@ -1,0 +1,9 @@
+version: "3"
+services:
+  datascience-notebook:
+    image: jupyter/datascience-notebook:be289da10d60 
+    volumes:
+      - /home/seb/git/jupiter/work:/home/jovyan/work:rw
+    ports:
+      - 8888:8888
+    container_name: datascience-notebook-container
